@@ -1,10 +1,10 @@
 # MATLAB Quantiles
 
-A utility for determining quantiles and divisions from a vector of numerical values and an optional vector of numerical weights. The value vector and weights are treated as a cumulative distribution function (CDF). It is possible to convert a vector of quantiles into a vector of associated divisions (i.e. domain values) and vice-versa.
+A utility for determining quantiles and associated values from a cumulative distribution function (CDF) represented as a vector of numerical values and an optional vector of numerical weights. It is possible to convert a vector of quantiles into a vector of associated CDF values. It is also possible to convert a vector of CDF values into associated quantiles.
 
 # Usage
 
-To convert from quantiles to divisions and back:
+To convert from quantiles to values (divisions) and back:
 
 `quants = div_to_quant( divs, values, weights = ones( size( values ) ), interpolation_method = 'linear' );`
 
