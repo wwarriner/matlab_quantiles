@@ -6,7 +6,7 @@ function [ divisions, uv, uw ] = quant_to_div( ...
     )
 
 if nargin < 3
-    weights = create_uniform_weights( values );
+    weights = qd_uniform_weights( values );
 end
 if nargin < 4
     interp_method = 'linear';
