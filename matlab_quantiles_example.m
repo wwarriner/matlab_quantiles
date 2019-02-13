@@ -21,3 +21,7 @@ plot_divisions( DIVISIONS, sort( values ), sort( weights ) );
 %% repetition
 values = [ 1 2 2 3 4 4 4 4 5 ];
 plot_quantiles( QUANTILES, values );
+
+%% uniform weights
+div_u = quant_to_div( QUANTILES, values );
+quant_u = div_to_quant( DIVISIONS, values );
