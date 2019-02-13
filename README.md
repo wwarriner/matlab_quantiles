@@ -1,6 +1,6 @@
 # MATLAB Quantiles
 
-A utility for determining quantiles and associated values from a cumulative distribution function (CDF) represented as a vector of numerical values and an optional vector of numerical weights. It is possible to convert a vector of quantiles into a vector of associated CDF values. It is also possible to convert a vector of CDF values into associated quantiles.
+A utility for determining quantiles and associated values from a cumulative distribution function (CDF) represented as a vector of numerical values and an optional vector of numerical weights. It is possible to convert a vector of quantiles into a vector of associated CDF values. It is also possible to convert a vector of CDF values into associated quantiles. The weight for a given index is the probability of finding a value between current and next index, and the last weight is ignored.
 
 # Usage
 
