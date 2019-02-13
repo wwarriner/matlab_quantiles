@@ -4,7 +4,7 @@ assert( isvector( values ) );
 assert( isnumeric( values ) );
 assert( isvector( weights ) );
 assert( isnumeric( weights ) );
-assert( all( size( values ) == size( weights ) ) );
+assert( numel( values ) == numel( weights ) );
 
 samples = sortrows( [ values( : ) weights( : ) ], 1 );
 
